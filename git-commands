@@ -1,0 +1,70 @@
+Git basic commands:
+
+1. To checkout/clone the git repository.
+    git clone (git_web_url_repo)
+    
+2. To checkout the branch. 
+    git checkout (branchName/dev/master)
+
+3. To checkout the branch forcefully.
+    git checkout -f (branchName/dev/master)
+    
+4. To check the log history of the checkout branch.
+    git log
+
+5. To check the history of specific file in git.
+    gitk (filename)
+
+6. To Check the status of branch. It shows the change log with untracked files as well.
+    git status
+
+7. To create new local branch in git.
+    git checkout -b "branch name"
+
+8. To add the list of changes in local branch in git.
+    git add filename/foldername(for specific file name) or * (to add all changes together)
+    
+9. To commit the changes in local branch in git.
+    git commit filename/foldername(for specific file name) or blank(to commit all newly added changes) -m "commit message like defect fix, story name, etc"
+
+10. To check the diff from head version of file in git.
+    git diff specific file name.
+
+11. To push the code commit in head branch or dev or master in git.
+    git push origin (branchName/dev/master)
+
+12. To store the local changes temporarily in git. It is useful at the time of taking branch update in the middle when doing changes in the same branch. 
+    git stash
+    
+13. To apply the temporary local changes in the updated feature branch.
+    git stash apply
+    
+14. To update the git branch.
+    git pull origin (branchname)
+
+15. To reset the checkout branch to mentioned commit id.
+    git reset --hard (commit id)
+    
+16. To reset the dev branch forcefully to its origin state. 
+    git reset --hard origin/(branchName)
+    
+17. To delete the local branch.
+    git branch -D (local feature branchName)
+
+18. To delete the specific file in the git.
+    find . -name '*.orig' -delete
+    
+19. To merge the code in git.
+    git merge (branch name) (first checkout the branch in which you want to merge the code and then run this command)
+
+20. To fetch the list of local/remote branches in git.
+    git fetch
+    
+21. To check the list of available branch in git.
+    git branch
+
+22. To come out from the current directory in git.
+    cd .. 
+
+23. To clean the untracked files/directory.
+    git clean -fd
