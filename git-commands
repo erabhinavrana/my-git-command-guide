@@ -68,3 +68,9 @@ Git basic commands:
 
 23. To clean the untracked files/directory.
     git clean -fd
+    
+24. To get the updated list of git branches
+	git checkout master
+	git pull --rebase
+	now checkout the respective branch using mentioned command
+	git checkout (branchName/dev/master)
