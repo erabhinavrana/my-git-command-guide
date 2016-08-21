@@ -74,3 +74,6 @@ Git basic commands:
 	git pull --rebase
 	now checkout the respective branch using mentioned command
 	git checkout (branchName/dev/master)
+
+25. To update/revert the specific file to the specific (branchName/dev/master) version
+	git checkout origin (branchName/dev/master) -- (complete path of file)
